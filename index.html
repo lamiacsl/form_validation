@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--css link-->
+	<link rel="stylesheet"  href="css/bootstrap.css">
+	<link rel="stylesheet"  href="css/style.css">
+	<link rel="stylesheet"  href="css/media.css">
+
+
+	<title>Form Validation</title>
+</head>
+<body>
+
+	<div class="container">
+		<label for="color-input" class="form-label">Color picker</label>
+		<input type="color" class="form-control form-control-color" id="ColorInput" value="#107550" title="Choose your color">
+	</div>
+	<br>
+	<br>
+
+
+
+		
+
+	<div class="container">
+	<div class="practice">
+	<p><h1>Validation</h1></p>
+</div>
+
+	<form class="row g-3 needs-validation" novalidate>
+  <div class="col-md-4">
+    <label for="validationCustom01" class="form-label">First name</label>
+    <input type="text" class="form-control" id="validation-custom01" value="Lamia" required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+  </div>
+  <div class="col-md-4">
+    <label for="validationCustom02" class="form-label">Last name</label>
+    <input type="text" class="form-control" id="validation-custom02" value="Chowdhury" required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+  </div>
+  <div class="col-md-4">
+    <label for="validation-custom-username" class="form-label">Username</label>
+    <div class="input-group has-validation">
+      <span class="input-group-text" id="inputGroupPrepend">@</span>
+      <input type="text" class="form-control" id="validation-custom-uername" aria-describedby="input-group-prepend" required>
+      <div class="invalid-feedback">
+        Please choose a username.
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <label for="validation-custom03" class="form-label">City</label>
+    <input type="text" class="form-control" id="validation-custom03" required>
+    <div class="invalid-feedback">
+      Please provide a valid city.
+    </div>
+  </div>
+  <div class="col-md-3">
+    <label for="validation-custom04" class="form-label">State</label>
+    <select class="form-select" id="validation-custom04" required>
+      <option selected disabled value="">Choose...</option>
+      <option>...</option>
+    </select>
+    <div class="invalid-feedback">
+      Please select a valid state.
+    </div>
+  </div>
+  <div class="col-md-3">
+    <label for="validation-custom05" class="form-label">Zip</label>
+    <input type="text" class="form-control" id="validation-custom05" required>
+    <div class="invalid-feedback">
+      Please provide a valid zip.
+    </div>
+  </div>
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+      <label class="form-check-label" for="invalidCheck">
+        Agree to terms and conditions
+      </label>
+      <div class="invalid-feedback">
+        You must agree before submitting.
+      </div>
+    </div>
+  </div>
+  <div class="col-12">
+    <button class="btn btn-primary" type="submit">Submit form</button>
+  </div>
+</form>
+</div>
+</div>
+
+<br>
+
+<br>
+
+
+
+
+<br>
+<br>
+
+<div class="container">
+<div class="practice">
+			<p><h1>Over View</h1></p>
+		</div>
+
+		
+			<form>
+  <div class="mb-3">
+    <label for="email1" class="form-label">Email address</label>
+    <input type="email" class="form-control email1" id="email1" name="email1" required>
+  </div>
+
+  <div class="mb-3">
+    <label for="password1" class="form-label">Password</label>
+    <input type="password1" class="form-control password1" id="Password1" name="password1" required>
+  </div>
+
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="Check1">
+    <label class="form-check-label" for="Check1">Check me out</label>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+
+</form>
+</div>
+<br>
+<br>
+
+<div class="container">
+<div class="practice">
+	<p><h1>controls</h1></p>
+</div>
+
+
+
+
+<br>
+
+<div class="mb-3">
+  <label for="form-control-input1" class="form-label">Email address</label>
+  <input type="email" class="form-control" id="form-control-input1" placeholder="Enter your mail address">
+</div>
+
+<div class="mb-3">
+  <label for="form-control-textarea1" class="form-label">Example textarea</label>
+  <textarea class="form-control" id="form-control-textarea1" rows="5"></textarea>
+</div>
+</div>
+<br>
+
+
+
+<div class="container">
+<div class="prc">
+	<p><h4>File Input</h4></p>
+</div>
+
+	<div class="mb-3">
+  <label for="form-file" class="form-label">Default file input </label>
+  <input class="form-control" type="file" id="formFile">
+</div>
+
+<div class="mb-3">
+  <label for="form-file-multiple" class="form-label">Multiple files input </label>
+  <input class="form-control" type="file" id="form-file-multiple" multiple>
+</div>
+
+<div class="mb-3">
+  <label for="form-file-disabled" class="form-label">Disabled file input </label>
+  <input class="form-control" type="file" id="form-file-disabled" disabled>
+</div>
+
+<div class="mb-3">
+  <label for="form-file-sm" class="form-label">Small file input </label>
+  <input class="form-control form-control-sm" id="form-file-sm" type="file">
+</div>
+
+<div>
+  <label for="form-file-lg" class="form-label">Large file input </label>
+  <input class="form-control form-control-lg" id="form-file-lg" type="file">
+</div>
+<br>
+
+<div class="container">
+<div class="practice">
+	<p><h1>Select</h1></p>
+</div>
+
+<select class="form-select" aria-label="Default select ">
+  <option selected>Open this select menu</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+<br>
+
+<div class="container">
+<div class="prc">
+	<p><h6>Disabled</h6></p>
+</div>
+<select class="form-select" aria-label="Disabled select " disabled>
+  <option selected>Open this select menu</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+<br>
+
+<div class="container">
+<div class="practice">
+	<p><h1>Check & Radios</h1></p>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flex-check-default">
+  <label class="form-check-label" for="flex-check-default">
+    Default check box
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flex-check-checked" checked>
+  <label class="form-check-label" for="flex-check-Checked">
+    Checked check box
+  </label>
+</div>
+
+<br>
+
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flex-check-indeterminate">
+  <label class="form-check-label" for="flex-check-indeterminate">
+    Indeterminate checkbox
+  </label>
+</div>
+
+<br>
+
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="flex-radio-default" id="flex-radio-default1">
+  <label class="form-check-label" for="flex-radio-default1">
+    Default radio
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flex-radio-default2" checked>
+  <label class="form-check-label" for="flex-radio-default2">
+    Default checked radio
+  </label>
+</div>
+
+<br>
+
+<div class="form-check form-switch">
+  <input class="form-check-input" type="checkbox" role="switch" id="flex-switch-check-default">
+  <label class="form-check-label" for="flex-switch-check-default">Default switch checkbox input</label>
+</div>
+</div>
+
+<div class="form-check form-switch">
+  <input class="form-check-input" type="checkbox" role="switch" id="flex-switch-check-checked" checked>
+  <label class="form-check-label" for="flex-switch-check-checked">Checked switch checkbox input</label>
+</div>
+
+<div class="form-check form-switch">
+  <input class="form-check-input" type="checkbox" role="switch" id="flex-switch-check-disabled" disabled>
+  <label class="form-check-label" for="flex-switch-check-disabled">Disabled switch checkbox input</label>
+</div>
+
+<div class="form-check form-switch">
+  <input class="form-check-input" type="checkbox" role="switch" id="flex-switch-check-checked-disabled" checked disabled>
+  <label class="form-check-label" for="flex-switch-check-checked-disabled">Disabled checked switch checkbox input</label>
+</div>
+</div>
+</div>
+
+
+<br>
+
+<input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
+<label class="btn btn-outline-primary" for="btn-check-outlined">Single toggle</label><br>
+
+<input type="checkbox" class="btn-check" id="btn-check-2-outlined" checked autocomplete="off">
+<label class="btn btn-outline-secondary" for="btn-check-2-outlined">Checked</label><br>
+
+<input type="radio" class="btn-check" name="options-outlined" id="success-outlined" autocomplete="off" checked>
+<label class="btn btn-outline-success" for="success-outlined">Checked success radio</label>
+
+<input type="radio" class="btn-check" name="options-outlined" id="danger-outlined" autocomplete="off">
+<label class="btn btn-outline-danger" for="danger-outlined">Danger radio</label>
+</div>
+</div>
+
+<br>
+
+
+<div class="container">
+	<div class="practice">
+		<p><h1> Layout </h1></p>
+	</div>
+
+		<div class="mb-3">
+  <label for="form-group-input" class="form-label">Example label</label>
+  <input type="text" class="form-control" id="form-group-input" placeholder="Example input placeholder">
+</div>
+<div class="mb-3">
+  <label for="form-group-input2" class="form-label">Another label</label>
+  <input type="text" class="form-control" id="form-group-input2" placeholder="Another input placeholder">
+</div>
+</div>
+<br>
+<br>
+<div class="container">
+<div class="prc">
+<p><h4>Form Grid</h4></p>
+</div>
+
+<div class="row">
+  <div class="col">
+    <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+  </div>
+  <div class="col">
+    <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+
+
+
+<br>
+<div class="container">
+	<div class="practice">
+		<p><h1>Horizontal form</h1></p>
+	</div>
+
+<form>
+  <div class="row mb-3">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3">
+    </div>
+  </div>
+  <div class="row mb-3">
+    <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="inputPassword3">
+    </div>
+  </div>
+  <fieldset class="row mb-3">
+    <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
+    <div class="col-sm-10">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="gridRadios" id="grid-radios1" value="option1" checked>
+        <label class="form-check-label" for="gridRadios1">
+          First radio
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="gridRadios" id="grid-radios2" value="option2">
+        <label class="form-check-label" for="gridRadios2">
+          Second radio
+        </label>
+      </div>
+      <div class="form-check disabled">
+        <input class="form-check-input" type="radio" name="gridRadios" id="grid-radios3" value="option3" disabled>
+        <label class="form-check-label" for="grid-radios3">
+          Third disabled radio
+        </label>
+      </div>
+    </div>
+  </fieldset>
+  <div class="row mb-3">
+    <div class="col-sm-10 offset-sm-2">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck1">
+        <label class="form-check-label" for="gridCheck1">
+          Example checkbox
+        </label>
+      </div>
+   
+
+  <button type="submit" class="btn btn-primary">Sign in</button>
+</form>
+</div>
+</div>
+
+<br>
+<br>
+
+
+<div class="container">
+	<div class="practice">
+		<p><h1>Range</h1></p>
+	</div>
+	<label for="custom-range1" class="form-label">Range</label>
+	<input type="range" class="form-range" id="custom-range1">
+</div>
+</form>
+<br>
+<br>
+<label for="disabled-range" class="form-label">Disabled Range</label>
+<input type="range" class="form-range" id="disabled-range" disabled>
+<br>
+<br>
+<label for="custom-range3" class="form-label"> Range</label>
+<input type="range" class="form-range" min="0" max="5" step="0.5" id="custom-range3">
+</div>
+</div>
+
+<br>
+<br>
+<div class="container">
+	<div class="practice">
+		<p><h1>Input Group</h1></p>
+	</div>
+	<div class="input-group mb-3">
+  <button class="btn btn-outline-secondary" type="button" id="button-addon1">Button</button>
+  <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+</div>
+
+<div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+  <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+</div>
+
+<div class="input-group mb-3">
+  <button class="btn btn-outline-secondary" type="button">Button</button>
+  <button class="btn btn-outline-secondary" type="button">Button</button>
+  <input type="text" class="form-control" placeholder="" aria-label="Example text with two button addons">
+</div>
+
+<div class="input-group">
+  <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username with two button addons">
+  <button class="btn btn-outline-secondary" type="button">Button</button>
+  <button class="btn btn-outline-secondary" type="button">Button</button>
+</div>
+<br>
+<br>
+<div class="container">
+	<div class="prc">
+		<p><h4>button with dropdown</h4></p>
+	</div>
+
+<div class="input-group mb-3">
+  <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#">Separated link</a></li>
+  </ul>
+  <input type="text" class="form-control" aria-label="Text input with dropdown button">
+</div>
+
+<div class="input-group mb-3">
+  <input type="text" class="form-control" aria-label="Text input with dropdown button">
+  <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#">Separated link</a></li>
+  </ul>
+</div>
+
+<div class="input-group">
+  <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Action before</a></li>
+    <li><a class="dropdown-item" href="#">Another action before</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#">Separated link</a></li>
+  </ul>
+  <input type="text" class="form-control" aria-label="Text input with 2 dropdown buttons">
+  <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#">Separated link</a></li>
+  </ul>
+</div>
+<div class="input-group mb-3">
+  <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#">Separated link</a></li>
+  </ul>
+  <input type="text" class="form-control" aria-label="Text input with dropdown button">
+</div>
+
+<div class="input-group mb-3">
+  <input type="text" class="form-control" aria-label="Text input with dropdown button">
+  <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#">Separated link</a></li>
+  </ul>
+</div>
+
+<div class="input-group">
+  <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Action before</a></li>
+    <li><a class="dropdown-item" href="#">Another action before</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#">Separated link</a></li>
+  </ul>
+  <input type="text" class="form-control" aria-label="Text input with 2 dropdown buttons">
+  <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#">Separated link</a></li>
+  </ul>
+</div>
+
+
+<br>
+<br>
+
+<div class="container">
+	<div class="practice">
+		<p><h1>Custom form validation</h1></p>
+	</div>
+
+	<form class="row g-3 needs-validation" novalidate>
+
+  <div class="col-md-6">
+    <label for="f-name" class="form-label">First name</label>
+    <input type="text" class="form-control f_name" id="f-name" name="f_name" placeholder="Enter your first name" required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+    <div class="invalid-feedback">
+    	Enter your first name
+  </div>
+</div>
+
+  <div class="col-md-6">
+    <label for="l_name" class="form-label">Last name</label>
+    <input type="text" class="form-control l_name" id="l_name" name="l_name"  placeholder="Enter your last name"required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+     <div class="invalid-feedback">
+    	Enter your first name
+  </div>
+</div>
+
+<div class="col-md-12">
+    <label for="email" class="form-label">email</label>
+    <input type="email" class="form-control email" id="email" name="l_name"  placeholder="Enter your mail address"required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+     <div class="invalid-feedback">
+    	Enter your mail address
+  </div>
+</div>
+
+ <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+      <label class="form-check-label" for="invalidCheck">
+        Agree to terms and conditions
+      </label>
+      <div class="invalid-feedback">
+        You must agree before submitting.
+      </div>
+    </div>
+  </div>
+  <div class="col-12">
+    <button class="btn btn-primary" type="submit">Submit form</button>
+  </div>
+</form>
+
+</div>
+</div>
+
+
+
+<!--js link-->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
